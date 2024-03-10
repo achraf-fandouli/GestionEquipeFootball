@@ -1,0 +1,8 @@
+
+CREATE TABLE IF NOT EXISTS equipe (
+    id BIGSERIAL PRIMARY KEY,
+    nom VARCHAR(255) NOT NULL,
+    acronyme VARCHAR(255) NOT NULL,
+    budget BIGINT NOT NULL
+);
+
