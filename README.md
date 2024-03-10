@@ -9,7 +9,7 @@
 - Spring boot.
 - Hibernate.
 - Base de données : PostgreSQL.
-- Falyway : la gestion des changements de schéma de base de données (Création des tables dans la base de données).
+- Flyway : la gestion des changements de schéma de base de données (Création des tables dans la base de données).
 - Dockerfile : pour la construction de l'image Docker.
 - Docker compose : contient des services ainsi que leur configuration qui composent notre application.
 
