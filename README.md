@@ -60,6 +60,9 @@ Mot de passe:
 
 		root
 
+![image](https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/2447251e-31ab-4fbc-b108-050855c94a71)
+
+
 8- Via l'inetface PgAdmin on va créer la base de données avec le nom "footballteamdb" (mentionné dans le fichier docker-compose.yaml)
 
 7- La documentation swagger est accessible via L'URL suivante :
