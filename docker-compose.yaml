@@ -1,0 +1,35 @@
+version: '1.0.0'
+
+services:
+
+  footballteam-app:
+    build: /
+    container_name: footballteammanage-container
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://football-postgres:5432/footballteamdb
+      SPRING_DATASOURCE_USERNAME: postgres
+      SPRING_DATASOURCE_PASSWORD: root
+    depends_on:
+      - football-postgres
+
+  football-postgres:
+    image: postgres:latest
+    container_name: postgres-container
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: footballteamdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: pgadmin-container
+    ports:
+      - "9090:9090"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: test@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: root
+      PGADMIN_LISTEN_PORT: 9090
