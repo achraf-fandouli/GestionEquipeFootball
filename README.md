@@ -1,9 +1,9 @@
-# Ce référentiel contient une API Rest avec 4 méthodes pour gérer une équipe de football:
+# Ce référentiel contient un projet proposant une API REST développée avec Spring Boot et déployée sur Docker pour la gestion des équipes de football. Il offre quatre fonctionnalités principales:
 
-### Méthode 1 : Permet de créer une équipe avec ou sans joueurs.
-### Méthode 2 : Permet de récupérer une équipe via sons id.
-### Méthode 3 : Permet de récupérer la liste d’équipes avec la liste de joueurs paginée et pourra être triée par nom d’équipe ou(et) acronyme ou(et) budget. 
-### Méthode 4 : Permet de récupérer la liste d’équipes avec la liste de joueurs paginée et triée sur nom d’équipe, acronyme et budget par défaut un tri ascendant.
+#### Méthode 1 : Permet de créer une équipe avec ou sans joueurs.
+#### Méthode 2 : Permet de récupérer une équipe via sons id.
+#### Méthode 3 : Permet de récupérer la liste d’équipes avec la liste de joueurs paginée et pourra être triée par nom d’équipe ou(et) acronyme ou(et) budget. 
+#### Méthode 4 : Permet de récupérer la liste d’équipes avec la liste de joueurs paginée et triée sur nom d’équipe, acronyme et budget par défaut un tri ascendant.
 
 ## Le projet est basé sur l'architecture à trois tiers: 
 - Couche de Présentation : Contrôleur.
