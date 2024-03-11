@@ -12,14 +12,17 @@
 
 
 ## L'environnement technique :
-- Spring boot.
+- Java la version : 17
+- spring boot la version : 3.2.3
 - Hibernate.
 - Maven
 - Base de données : PostgreSQL.
 - Flyway : la gestion des changements de schéma de base de données (Création des tables dans la base de données).
 - Docker desktop : pour le développement, le test et le déploiement de conteneurs de notre application.
 - Dockerfile : pour la construction de l'image Docker.
-- Docker compose : contient des services ainsi que leur configuration qui composent notre application.
+- Docker compose : contient les services ainsi que leur configuration qui composent notre application.
+- Junit et Mockito pour les test unitaire et d'integration
+- H2 Database pour les tests d'integration.
 - Postamn : pour le test de L'API.
 
 ## Ci-dessous la liste des méthodes :
@@ -122,4 +125,36 @@ Récupération de la liste d’équipes avec la liste de joueurs paginée et pou
 
 <img width="626" alt="image" src="https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/fbea063f-b1a5-4fcd-abfe-bc3fa7d1af4f">
 
+
+12- Test unitaire et d'integration :
+Pour l'exécution des tests, dans ce cas avec deux méthodes : soit directement avec l'IDE, soit via la ligne de commande.
+
+### Exécution test unitaire directement avec l'IDE:
+
+<img width="687" alt="Test unitaire" src="https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/288f2e41-3dfb-4a39-9511-1167165583de">
+
+
+Résultat d'exécution:
+
+
+<img width="667" alt="resultunitTest" src="https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/ed27264c-5160-446d-9108-affc8005299f">
+
+### Exécution test d'integration directement avec l'IDE:
+
+<img width="682" alt="integration test" src="https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/a845db6b-82d9-47e2-9893-b15137da0fb1">
+
+
+Résultat d'exécution:
+
+
+<img width="761" alt="resultIntegrationTest" src="https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/352e3cbb-0954-41f2-ac84-93a2dbc7428e">
+
+### Exécution des tests via la ligne de commande: mvn test
+Ouvrez un terminal ou une invite de commande, puis naviguez vers le répertoire de votre projet. Ensuite, lancez la commande "mvn test".
+
+		mvn test
+
+Résultat d'exécution:
+
+<img width="959" alt="TraceExecutionTest" src="https://github.com/achraf-fandouli/GestionEquipeFootball/assets/55927202/812498f9-766e-4028-906f-39972406ecb2">
 
