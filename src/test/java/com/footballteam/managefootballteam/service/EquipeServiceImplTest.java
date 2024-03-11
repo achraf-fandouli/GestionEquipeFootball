@@ -6,7 +6,6 @@ import static org.mockito.Mockito.when;
 
 import java.util.List;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +24,6 @@ import com.footballteam.managefootballteam.exception.EquipeException.CodeErrorEx
 import com.footballteam.managefootballteam.model.Equipe;
 import com.footballteam.managefootballteam.service.serviceImpl.EquipeServiceImpl;
 
-//@ExtendWith({SpringExtension.class, MockitoExtension.class})
 @SpringBootTest
 public class EquipeServiceImplTest {
 
@@ -34,11 +32,6 @@ public class EquipeServiceImplTest {
 
 	@Autowired
 	private EquipeServiceImpl equipeService;
-
-	@BeforeEach
-	public void setUp() {
-		// MockitoAnnotations.initMocks(this);
-	}
 
 	@Test
 	public void testCreateEquipe() {
@@ -161,5 +154,4 @@ public class EquipeServiceImplTest {
 					ex.getCodeErrorException().getCodeNumber());
 		}
 	}
-
 }
